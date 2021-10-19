@@ -36,6 +36,13 @@ class MandrillMessage extends MailMessage
         return $this;
     }
 
+    public function attach($url, array $options = []): self
+    {
+        $this->attachments[0] = ['type' => 'pdf', 'name' => 'test.pdf', 'content' => $url];
+
+        return $this;
+    }
+
     public function fromName(string $name): self
     {
         $this->from[1] = $name;
@@ -67,6 +74,7 @@ class MandrillMessage extends MailMessage
             'from_email' => $this->from[0] ?? Config::get('mail.from.address'),
             'from_name' => $this->from[1] ?? Config::get('mail.from.name'),
             'global_merge_vars' => $this->mapGlobalVars(),
+            'attachments' => $this->attach,
         ];
 
         if (! empty($this->replyTo)) {
