@@ -1,5 +1,5 @@
 {
-  "name": "laravel-mandrill-driver",
+  "name": "laravel-mandrill-driver-package",
   "version": "1.0.0",
   "description": "forked and modified",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/julioalpa/laravel-mandrill-driver.git"
+    "url": "git+https://github.com/julioalpa/laravel-mandrill-driver-package.git"
   },
   "author": "julioalpa",
   "license": "ISC",
