@@ -1,6 +1,6 @@
 <?php
 
-namespace SalamWaddah\Mandrill;
+namespace julioalpa\Mandrill;
 
 use GuzzleHttp\Client;
 use Illuminate\Notifications\Notification;

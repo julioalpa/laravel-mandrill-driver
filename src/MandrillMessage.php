@@ -1,6 +1,6 @@
 <?php
 
-namespace SalamWaddah\Mandrill;
+namespace julioalpa\Mandrill;
 
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Support\Facades\Config;
@@ -74,7 +74,7 @@ class MandrillMessage extends MailMessage
             'from_email' => $this->from[0] ?? Config::get('mail.from.address'),
             'from_name' => $this->from[1] ?? Config::get('mail.from.name'),
             'global_merge_vars' => $this->mapGlobalVars(),
-            'attachments' => $this->attach,
+            'attachments' => $this->attachments,
         ];
 
         if (! empty($this->replyTo)) {

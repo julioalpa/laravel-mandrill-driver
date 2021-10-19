@@ -1,0 +1,20 @@
+{
+  "name": "laravel-mandrill-driver",
+  "version": "1.0.0",
+  "description": "forked and modified",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julioalpa/laravel-mandrill-driver.git"
+  },
+  "author": "julioalpa",
+  "license": "ISC",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/@julioalpa" },
+  "bugs": {
+    "url": "https://github.com/julioalpa/laravel-mandrill-driver/issues"
+  },
+  "homepage": "https://github.com/julioalpa/laravel-mandrill-driver#readme"
+}
